@@ -120,7 +120,7 @@ public class TonkersEvents {
 					puntpower += puntboost;
 				}
 				
-				float knockback = (AbilityHelper.calcKnockback(attacker, attacked, held, tool, toolTag, 0) + 1) * puntpower;
+				float knockback = (AbilityHelper.calcKnockback(attacker, attacked, held, tool, toolTag) + 1) * puntpower;
 				attacked.addVelocity((double) (-MathHelper.sin(attacker.rotationYaw * (float) Math.PI / 180.0F) * (float) knockback * 0.5F), 0.1D, (double) (MathHelper.cos(attacker.rotationYaw * (float) Math.PI / 180.0F) * (float) knockback * 0.5F));
 			}
 		}
